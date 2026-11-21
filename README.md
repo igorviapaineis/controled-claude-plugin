@@ -13,11 +13,14 @@ envia.
 
 - **Claude.ai, app do Claude e Cowork**: em Personalizar › Plugins › Adicionar › Adicionar
   marketplace, informe `igorviapaineis/controled-claude-plugin` e instale o plugin Controled.
-- **Claude Code**:
+- **Claude Code**, dentro da sessão:
 
   ```
-  /plugin install controled --marketplace igorviapaineis/controled-claude-plugin
+  /plugin marketplace add igorviapaineis/controled-claude-plugin
+  /plugin install controled@controled
   ```
+
+  Ou no terminal: `claude plugin install controled --marketplace igorviapaineis/controled-claude-plugin`.
 
 Depois, conecte o conector do Controled pela aba de conectores do plugin, com a sua conta do
 Controled.
