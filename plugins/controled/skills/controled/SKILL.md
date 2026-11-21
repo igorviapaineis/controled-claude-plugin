@@ -86,8 +86,16 @@ Leitura não altera nada; escrita muda o que passa nas telas de clientes pagante
 
 - `insufficient_scope`: a conexão não tem a permissão. O usuário reconecta o conector e marca o
   escopo pedido. Não tente outra ação para contornar.
-- 403 `insufficient_role`: o cargo do usuário no Controled não permite. Diga qual ação foi
-  negada.
+- 403 `insufficient_role`: o cargo do usuário no Controled não permite. Pelo conector, parte das
+  ações pede cargo mínimo, marcado `cargo N+` em `references/catalogo.md`. Exemplos: abrir e
+  resolver diagnóstico, enviar contagem, registrar fator de ocupação e validar a contagem pedem 50
+  (admin da organização); ler campanhas, mídias e comandos, usar o criador de vídeo e agendar
+  relatório pedem 30. Outras conferem o cargo na própria ação, sem marca no catálogo: listar os
+  arquivos de configuração da tela pede 50 e excluir um deles 40; editar uma tela pede 30 e
+  excluí-la 40; reiniciar a máquina pede 40, e os demais comandos ao player pedem a permissão do
+  cargo para editar telas. Parte dessas recusas volta como 422 com a regra no detalhe, não como
+  403. Diga qual ação foi negada e o cargo exigido, e que um administrador com cargo suficiente
+  pode fazê-la. `GET /eu` mostra o cargo de quem conectou; confira antes de propor essas ações.
 - 400 ou 422 com `details`: campo inválido; corrija pelo detalhe e tente de novo.
 - 402 `insufficient_credits`: sem saldo de vídeo.
 - 409: conflito de estado (layout em uso, relatório ainda gerando, projeto alterado). Leia o
