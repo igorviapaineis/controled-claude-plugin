@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "controled": {
+      "type": "http",
+      "url": "https://controled.com.br/api/mcp"
+    }
+  }
+}

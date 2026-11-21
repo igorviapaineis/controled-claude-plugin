@@ -1,0 +1,12 @@
+{
+  "name": "controled",
+  "owner": { "name": "Controled", "url": "https://controled.com.br" },
+  "description": "Plugin do Controled para o Claude: opere pelo Claude a rede de telas de LED e totens da sua empresa.",
+  "plugins": [
+    {
+      "name": "controled",
+      "source": "./plugins/controled",
+      "description": "Opere pelo Claude a rede de telas de LED e totens da sua empresa no Controled: telas e players, anunciantes, contratos, campanhas, programação institucional, mídias, layouts com notícias e clima, criador de vídeo, relatórios de exibição e diagnósticos."
+    }
+  ]
+}
