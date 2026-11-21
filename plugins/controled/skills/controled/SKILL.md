@@ -110,7 +110,7 @@ Diga isso ao usuário em vez de improvisar uma saída que não chega às telas.
 ## Referências
 
 Leia só a que o pedido precisa:
-- `references/catalogo.md`: as 102 ações por domínio, com escopo e o que fazem.
+- `references/catalogo.md`: todas as ações por domínio, com escopo e o que fazem.
 - `references/layouts.md`: modelo do layout (elementos, notícias, clima, relógio), regras de
   validação e um exemplo pronto.
 - `references/conteudo.md`: anunciantes, contratos e slots, campanhas, programação institucional,
