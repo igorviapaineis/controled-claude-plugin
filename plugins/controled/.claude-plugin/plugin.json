@@ -1,7 +1,7 @@
 {
   "name": "controled",
   "displayName": "Controled",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Opere pelo Claude a rede de telas de LED e totens da sua empresa no Controled: telas e players, anunciantes, contratos, campanhas, programação institucional, mídias, layouts com notícias e clima, criador de vídeo, relatórios de exibição e diagnósticos.",
   "author": {
     "name": "Controled",
@@ -11,7 +11,7 @@
   "repository": "https://github.com/igorviapaineis/controled-claude-plugin",
   "icon": "./.claude-plugin/icon.png",
   "documentationUrl": "https://controled.com.br/docs/api",
-  "supportUrl": "https://wa.me/5547997820705",
+  "supportUrl": "https://wa.me/5547997520288",
   "privacyPolicyUrl": "https://controled.com.br/privacidade",
   "termsOfServiceUrl": "https://controled.com.br/termos",
   "keywords": [
